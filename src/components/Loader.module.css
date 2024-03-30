@@ -1,0 +1,11 @@
+.text {
+  text-align: center;
+  margin-top: 50px;
+}
+.btn {
+  padding: 5px;
+  margin: 50px auto;
+  display: block;
+  width: 50px;
+  cursor: pointer;
+}

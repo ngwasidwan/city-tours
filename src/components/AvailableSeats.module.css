@@ -1,0 +1,50 @@
+.gridContainer {
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: repeat(6, 50px);
+
+  justify-content: center;
+  align-content: center;
+
+  margin-top: 10px;
+
+  gap: 12px;
+}
+.seatNumber {
+  text-align: center;
+  padding: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #0d0d0d;
+  font-weight: 600;
+  /* background-color: #0000007a; */
+  background-color: #f6f6f6b5;
+  border: none;
+}
+
+.seatNumber:focus {
+  outline: none;
+}
+
+.seatNumber:nth-child(5n-1) {
+  grid-column: 5/6;
+}
+
+.seatNumber:nth-child(68) {
+  grid-column: 3/5;
+}
+.selected {
+  background-color: rgba(249, 96, 96, 0.868);
+  cursor: not-allowed;
+  /* opacity: 0.5; */
+}
+.disableBtn {
+  padding: 5px;
+  margin-left: 30px;
+  color: #333;
+
+  cursor: pointer;
+}
+.seat {
+  color: #ffffffa8;
+}

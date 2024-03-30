@@ -1,0 +1,76 @@
+.form {
+  max-width: 500px;
+  /* padding: 20px; */
+  margin-top: 20px;
+  position: relative;
+}
+
+.current-city,
+.agency,
+.form .destination-intro {
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 70px;
+}
+
+.destination-intro {
+  margin-top: 20px;
+}
+.form option {
+  background-color: rgba(5, 8, 10, 0.6);
+}
+.form select {
+  background: none;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+select:focus {
+  outline: none;
+}
+.city {
+  margin-left: 70px;
+  width: 200px;
+  padding: 5px;
+  font-size: 16px;
+}
+.agency {
+  margin-top: 20px;
+}
+.form .destination {
+  margin-left: 70px;
+
+  width: 200px;
+  padding: 5px;
+}
+.form a:link,
+.form a:visited {
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 30%;
+  margin-top: 20px;
+  color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s;
+  position: absolute;
+  bottom: 12px;
+  right: 10px;
+  background: none;
+  border: 1px solid #ffffff;
+}
+
+.form a:hover,
+.form a:active {
+  border: none;
+  background-color: #000000b6;
+}

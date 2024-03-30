@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  color: #e6e6e6;
+  height: 100vh;
+
+  background-image: linear-gradient(rgba(57, 57, 57, 0.6), rgba(5, 8, 10, 0.6)),
+    url("../images/home-background.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  color: #e6e6e6;
+}
+
+.container h1 {
+  font-size: 50px;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  margin: 30px 0;
+  color: #dadada;
+}
+.container h3 {
+  text-transform: uppercase;
+}
+.text {
+  max-width: 700px;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  line-height: 2;
+}
