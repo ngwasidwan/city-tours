@@ -10,7 +10,7 @@ function AvailableSeats() {
   const [seatNumbers, setSeatNumbers] = useState([]);
 
   const navigate = useNavigate();
-  const { setSeatSelected, seatSelected, setBusNumber } =
+  const { setSeatSelected, seatSelected, setBusNumber, setClickBtn } =
     useContext(FormContext);
 
   const [searchParam] = useSearchParams();
@@ -48,14 +48,18 @@ function AvailableSeats() {
         console.log("there was an error");
       }
     };
+    setClickBtn(false);
     fetchData();
-  }, [curAgency, setBusNumber]);
+  }, [curAgency, setBusNumber, setClickBtn]);
   return (
     <div>
       <span className={styles.seat}>Selected seat: {seatSelected}</span>
       <button
         disabled={disableBtn}
-        onClick={() => navigate(-1)}
+        onClick={() => {
+          navigate(-1);
+          setClickBtn(true);
+        }}
         className={styles.disableBtn}
       >
         confirm

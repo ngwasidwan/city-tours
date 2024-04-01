@@ -91,23 +91,6 @@ select:focus {
 input:focus {
   outline: none;
 }
-.btn {
-  margin-top: 20px;
-
-  cursor: pointer;
-  padding: 10px;
-  text-transform: uppercase;
-  background-color: #01192de1;
-  border: none;
-  color: #dfdfdf;
-  font-size: 12px;
-  border-radius: 5px;
-  transition: all 0.3s;
-}
-.btn:hover {
-  background-color: #464646;
-  color: #101010;
-}
 
 .form .seat {
   width: 30px;
@@ -151,7 +134,7 @@ input:focus {
   padding: 5px;
   text-transform: uppercase;
   background: none;
-  background-color: #000000;
+  background-color: #006411d7;
   color: #fff;
   border-radius: 5px;
   cursor: pointer;

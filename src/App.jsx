@@ -13,15 +13,18 @@ function App() {
   const [openSeat, setOpenSeat] = useState(false);
   const [seatSelected, setSeatSelected] = useState("");
   const [busNumber, setBusNumber] = useState(0);
+  const [clickBtn, setClickBtn] = useState(false);
   return (
     <FormContext.Provider
       value={{
         openSeat,
         seatSelected,
         busNumber,
+        clickBtn,
         setOpenSeat,
         setSeatSelected,
         setBusNumber,
+        setClickBtn,
       }}
     >
       <BrowserRouter>

@@ -5,8 +5,6 @@ import styles from "./Form.module.css";
 import { FormContext } from "../App";
 import { data } from "../data/data";
 
-// const TOTAL_SEATS = 70;
-
 function Form() {
   const [searchParam] = useSearchParams();
 
@@ -19,7 +17,8 @@ function Form() {
   const [schedule, setSchedule] = useState("");
   const [paymentService, setPaymentService] = useState("");
 
-  const { seatSelected, busNumber, setSeatSelected } = useContext(FormContext);
+  const { seatSelected, busNumber, setSeatSelected, clickBtn } =
+    useContext(FormContext);
 
   const activeEl = useRef(null);
   const navigate = useNavigate();
@@ -126,7 +125,7 @@ function Form() {
           </Link>
           <input
             className={styles.seat}
-            value={seatSelected}
+            value={clickBtn ? seatSelected : ""}
             name="seat-number"
             readOnly
           />
